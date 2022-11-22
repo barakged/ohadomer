@@ -118,7 +118,7 @@ p {
   background-repeat: no-repeat;
   width: 100%;
   /* height: 100%;  */
-  height:1000px;
+  height:600px;
 }
 
 /*===== All Slick Slide Outline Style =====*/
@@ -975,6 +975,7 @@ p {
       display: none; } }
 
 .about-content {
+  text-align: right;
   max-width: 480px; }
   .about-content .text {
     margin-top: 15px; }
@@ -1134,6 +1135,7 @@ p {
   .single-team .team-image {
     position: relative; }
     .single-team .team-image img {
+      height:300px;
       width: 100%; }
     .single-team .team-image .social {
       position: absolute;
@@ -1187,6 +1189,7 @@ p {
      08.TESTIMONIAL css 
 ===========================*/
 .single-testimonial {
+  height:450px;
   background-color: #fff;
   -webkit-box-shadow: 0px 0px 30px 0px rgba(167, 167, 167, 0.16);
   -moz-box-shadow: 0px 0px 30px 0px rgba(167, 167, 167, 0.16);
@@ -1224,6 +1227,7 @@ p {
     .single-testimonial .testimonial-author .author-image {
       position: relative; }
       .single-testimonial .testimonial-author .author-image .author {
+        border-radius: 50%;
         position: absolute;
         top: 17px;
         left: 17px;
@@ -1287,6 +1291,7 @@ p {
     .single-blog .blog-content .meta li a {
       color: #6A6972; }
   .single-blog .blog-content .text {
+    text-align: right;
     font-size: 23px;
     font-weight: 400;
     line-height: 30px;

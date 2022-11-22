@@ -1,6 +1,7 @@
 /* Slider */
 .slick-slider
 {
+    text-align: right;
     position: relative;
 
     display: block;
