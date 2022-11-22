@@ -8,6 +8,7 @@ app.use(express.json());
 
 app.use(express.static("app"))
 
+
 app.use('/', function(req, res){
     res.sendFile(path.join(__dirname+'/app/index.html'))
 })
