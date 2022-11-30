@@ -593,6 +593,7 @@ p {
 
 .navbar-nav .nav-item {
   margin-right: 45px;
+  text-align: right;
   position: relative; }
   @media only screen and (min-width: 992px) and (max-width: 1199px) {
     .navbar-nav .nav-item {
