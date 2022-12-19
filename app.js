@@ -7,7 +7,7 @@ const path = require('path');
 const express = require("express")
 const app = express()
 
-app.use(function(request, response, next) {
+app.use(function(req, res, next) {
     if(req.headers["x-forwarded-proto"] === "https"){
         // OK, continue
         return next();
