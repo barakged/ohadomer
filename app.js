@@ -14,18 +14,14 @@ app.use(express.static("public"))
 app.get("/", function (req, res) {
     res.sendFile(path.join(__dirname+'/app/index.html'))
 })
-//http to https redirects
-app.enable('trust proxy');
-app.use((req,res,next)=>{
-    console.log('hereeee')
-    if(rec.secure){
-        next();
-    }else {
-        console.log('hereeee222')
-        res.redirect('https://www.ohadoner.co.il'+req.url);
+app.all('*', function(req, res, next){
+    console.log('req start: ',req.secure, req.hostname, req.url, app.get('port'));
+    if (req.secure) {
+        return next();
     }
-});
 
+    res.redirect('https://'+req.hostname + ':' + app.get('secPort') + req.url);
+});
 // start the server listening for requests
 app.listen(process.env.PORT || 3000, 
 	() => console.log("Server is running..."));
