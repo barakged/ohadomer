@@ -2,10 +2,24 @@
 
 const path = require('path');
 
+function forceHTTPS(req, res, next) {
+    if (!req.secure) {
+
+
+        var hostname = req.hostname;
+
+
+        var destination = ['https://', hostname,':', app.get('httpsPort'), req.url].join('');
+
+        return res.redirect(destination);
+    }
+    next();
+}
 
 // create an express app
 const express = require("express")
 const app = express()
+app.use(forceHTTPS);
 
 // use the express-static middleware
 app.use(express.static("public"))
@@ -14,14 +28,7 @@ app.use(express.static("public"))
 app.get("/", function (req, res) {
     res.sendFile(path.join(__dirname+'/app/index.html'))
 })
-app.all('*', function(req, res, next){
-    console.log('req start: ',req.secure, req.hostname, req.url, app.get('port'));
-    if (req.secure) {
-        return next();
-    }
 
-    res.redirect('https://'+req.hostname + ':' + app.get('secPort') + req.url);
-});
 // start the server listening for requests
 app.listen(process.env.PORT || 3000, 
 	() => console.log("Server is running..."));
