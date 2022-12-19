@@ -25,6 +25,7 @@ app.use((req,res,next)=>{
         res.redirect('https://www.ohadoner.co.il'+req.url);
     }
 });
+
 // start the server listening for requests
 app.listen(process.env.PORT || 3000, 
 	() => console.log("Server is running..."));
