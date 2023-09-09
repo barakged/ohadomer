@@ -44,7 +44,7 @@ $(function () {
   });
 
   $(".whatsappButton").on("click", function () {
-    var phoneNumber = "+9725503279131";
+    var phoneNumber = "+972503279131";
 
     // You can also add a predefined message using the 'text' parameter
     var message = encodeURIComponent("Hello, this is a WhatsApp message!");
