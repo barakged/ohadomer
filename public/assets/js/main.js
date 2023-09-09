@@ -47,7 +47,7 @@ $(function () {
     var phoneNumber = "+972503279131";
 
     // You can also add a predefined message using the 'text' parameter
-    var message = encodeURIComponent("Hello, this is a WhatsApp message!");
+    var message = encodeURIComponent("היי, הגעתי דרך האתר");
 
     // Construct the WhatsApp URL
     var whatsappUrl =
