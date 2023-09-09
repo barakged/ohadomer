@@ -852,7 +852,7 @@ p {
       04.SERVICES css 
 ===========================*/
 .single-services {
-  height:670px;
+  max-height:670px;
   background-color: #fff;
   -webkit-box-shadow: 0px 5px 30px 0px rgba(167, 167, 167, 0.16);
   -moz-box-shadow: 0px 5px 30px 0px rgba(167, 167, 167, 0.16);
