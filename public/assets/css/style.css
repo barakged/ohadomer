@@ -781,7 +781,8 @@ p {
   .header-hero-content .header-sub-title {
     font-size: 38px;
     font-weight: 300;
-    color: #fff; }
+    color: #fff;
+    text-shadow:2px 2px 4px rgba(1, 1, 1, 1); }
     @media (max-width: 767px) {
       .header-hero-content .header-sub-title {
         font-size: 24px; } }
@@ -1525,3 +1526,18 @@ p {
   display: none; }
   .back-to-top:hover {
     color: #fff; }
+
+
+
+    /* Your regular styles for mobile devices */
+.my-element {
+  /* Your other styles */
+  max-width: 100%;
+}
+
+/* Media query for screens larger than mobile */
+@media (min-width: 768px) {
+  .my-element {
+      max-width: 50%;
+  }
+}
