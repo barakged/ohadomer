@@ -136,9 +136,9 @@ p {
   -moz-user-select: none;
   -ms-user-select: none;
   user-select: none;
-  padding: 0 25px;
+  padding: 0 12px;
   font-size: 16px;
-  line-height: 48px;
+  line-height: 32px;
   border-radius: 8px;
   border: 0;
   color: #fff;
