@@ -532,14 +532,16 @@ p {
   transition: all 0.3s ease-out 0s; }
 
 .navbar-brand {
-  padding: 0; }
+  padding: 0; 
+  margin:0;
+}
 
 .navbar-toggler {
   padding: 0; }
   .navbar-toggler .toggler-icon {
     width: 30px;
     height: 2px;
-    background-color: #fff;
+    background-color: #103960;
     display: block;
     margin: 5px 0;
     position: relative;
